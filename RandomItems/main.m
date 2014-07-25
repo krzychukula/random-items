@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRItem.h"
 
 int main(int argc, const char * argv[])
 {
@@ -29,6 +30,10 @@ int main(int argc, const char * argv[])
         for (NSString *item in items) {
             NSLog(@"%@", item);
         }
+        
+        BNRItem *item = [[BNRItem alloc] init];
+        NSLog(@"%@ %@ %@ %d", [item itemName], [item dateCreated],
+              [item serialNumber], [item valueInDollars]);
         
         items = nil;
     }

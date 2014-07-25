@@ -35,8 +35,7 @@ int main(int argc, const char * argv[])
         item.itemName = @"Red Sofa";
         item.serialNumber = @"A1B2C";
         item.valueInDollars = 5;
-        NSLog(@"%@ %@ %@ %d", item.itemName, item.dateCreated,
-              item.serialNumber, item.valueInDollars);
+        NSLog(@"%@", item);
         
         items = nil;
     }

@@ -50,6 +50,13 @@
     return self;
 }
 
+- (instancetype)initWithItemName:(id)name
+                    serialNumber:(id)sNumber
+{
+    return [self initWithItemName:name
+                   valueInDollars:0
+                     serialNumber:sNumber];
+}
 - (instancetype)initWithItemName:(NSString *)name
 {
     return [self initWithItemName:name

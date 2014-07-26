@@ -21,6 +21,8 @@ int main(int argc, const char * argv[])
             [items addObject:item];
         }
         
+        
+        
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
         }

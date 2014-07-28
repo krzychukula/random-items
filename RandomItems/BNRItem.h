@@ -9,15 +9,14 @@
 @import Foundation;
 
 @interface BNRItem : NSObject
-{
-    NSString *_itemName;
-    NSString *_serialNumber;
-    int _valueInDollars;
-    NSDate *_dateCreated;
-    
-    BNRItem *_containedItem;
-    __weak BNRItem *_container;
-}
+
+@property BNRItem *_containedItem;
+@property BNRItem *_container;
+
+@property NSString *itemName;
+@property NSString *serialNumber;
+@property int valueInDollars;
+@property NSDate *dateCreated;
 
 + (instancetype)randomItem;
 
@@ -28,22 +27,5 @@
 - (instancetype)initWithItemName:(NSString *)name
                     serialNumber:(NSString *)sNumber;
 - (instancetype)initWithItemName:(NSString *)name;
-
-- (void)setItemName:(NSString *)str;
-- (NSString *)itemName;
-
-- (void)setSerialNumber:(NSString *)str;
-- (NSString *)serialNumber;
-
-- (void)setValueInDollars:(int)v;
-- (int)valueInDollars;
-
-- (NSDate *)dateCreated;
-
-- (void)setContainedItem:(BNRItem *)item;
-- (BNRItem *)containedItem;
-
-- (void)setContainer:(BNRItem *)item;
-- (BNRItem *)container;
 
 @end

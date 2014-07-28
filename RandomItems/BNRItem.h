@@ -10,13 +10,13 @@
 
 @interface BNRItem : NSObject
 
-@property BNRItem *_containedItem;
-@property BNRItem *_container;
+@property (nonatomic) BNRItem *_containedItem;
+@property (nonatomic) BNRItem *_container;
 
-@property NSString *itemName;
-@property NSString *serialNumber;
-@property int valueInDollars;
-@property NSDate *dateCreated;
+@property (nonatomic) NSString *itemName;
+@property (nonatomic) NSString *serialNumber;
+@property (nonatomic) int valueInDollars;
+@property (nonatomic, readonly) NSDate *dateCreated;
 
 + (instancetype)randomItem;
 

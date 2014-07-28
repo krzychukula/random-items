@@ -110,4 +110,9 @@
 {
     return _dateCreated;
 }
+
+- (void)dealloc
+{
+    NSLog(@"Destroyed: %@", self);
+}
 @end

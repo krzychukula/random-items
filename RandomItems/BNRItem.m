@@ -111,6 +111,28 @@
     return _dateCreated;
 }
 
+- (void)setContainedItem:(BNRItem *)item
+{
+    _containedItem = item;
+    
+    item.container = self;
+}
+
+- (BNRItem *)containedItem
+{
+    return _containedItem;
+}
+
+- (void)setContainer:(BNRItem *)item
+{
+    _container = item;
+}
+
+- (BNRItem *)container
+{
+    return _container;
+}
+
 - (void)dealloc
 {
     NSLog(@"Destroyed: %@", self);

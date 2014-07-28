@@ -228,6 +228,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RandomItems/RandomItems-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -237,6 +238,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RandomItems/RandomItems-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
@@ -259,6 +261,7 @@
 				015F8F46198272100056DAA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,6 +14,9 @@
     NSString *_serialNumber;
     int _valueInDollars;
     NSDate *_dateCreated;
+    
+    BNRItem *_containedItem;
+    __weak BNRItem *_container;
 }
 
 + (instancetype)randomItem;
@@ -36,5 +39,11 @@
 - (int)valueInDollars;
 
 - (NSDate *)dateCreated;
+
+- (void)setContainedItem:(BNRItem *)item;
+- (BNRItem *)containedItem;
+
+- (void)setContainer:(BNRItem *)item;
+- (BNRItem *)container;
 
 @end

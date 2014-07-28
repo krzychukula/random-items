@@ -79,6 +79,12 @@
     return descriptionString;
 }
 
+- (void)setContainedItem:(BNRItem *)containedItem
+{
+    _containedItem = containedItem;
+    self.containedItem.container = self;
+}
+
 
 - (void)dealloc
 {
